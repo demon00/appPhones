@@ -13,6 +13,10 @@
   "author": "dmitryC",
   "license": "ISC",
   "devDependencies": {
-    "node-static": "^0.7.9"
+    "node-static": "^0.7.9",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "lodash.template": "^4.4.0"
   }
 }
