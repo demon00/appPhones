@@ -37,7 +37,7 @@ export default class PhonePage {
 
     this._catalogue.on('phonesViewerHidden', event => {
       this._catalogue.hide(event.detail);
-      this._phonesViewer.show();
+      //this._phonesViewer.show();
       this._phoneGallary.show();
     });
 
