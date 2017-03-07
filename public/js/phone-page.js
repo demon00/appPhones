@@ -155,94 +155,88 @@ const phonesFromServer = [
     "snippet": "Motorola CHARM fits easily in your pocket or palm.  Includes MOTOBLUR service."
   }
 ];
-
 const phoneFromServ = [
   {
-  "additionalFeatures": "Sensors: proximity, ambient light, barometer, gyroscope",
-  "android": {
-    "os": "Android 3.0",
-    "ui": "Honeycomb"
-  },
-  "availability": [
-    ""
-  ],
-  "battery": {
-    "standbyTime": "336 hours",
-    "talkTime": "24 hours",
-    "type": "Other ( mAH)"
-  },
-  "camera": {
-    "features": [
-      "Flash",
-      "Video"
+    "additionalFeatures": "Sensors: proximity, ambient light, barometer, gyroscope",
+    "android": {
+      "os": "Android 3.0",
+      "ui": "Honeycomb"
+    },
+    "availability": [
+      ""
     ],
-    "primary": "5.0 megapixels"
-  },
-  "connectivity": {
-    "bluetooth": "Bluetooth 2.1",
-    "cell": "",
-    "gps": true,
-    "infrared": false,
-    "wifi": "802.11 b/g/n"
-  },
-  "description": "Motorola XOOM with Wi-Fi has a super-powerful dual-core processor and Android\u2122 3.0 (Honeycomb) \u2014 the Android platform designed specifically for tablets. With its 10.1-inch HD widescreen display, you\u2019ll enjoy HD video in a thin, light, powerful and upgradeable tablet.",
-  "display": {
-    "screenResolution": "WXGA (1200 x 800)",
-    "screenSize": "10.1 inches",
-    "touchScreen": true
-  },
-  "hardware": {
-    "accelerometer": true,
-    "audioJack": "3.5mm",
-    "cpu": "1 GHz Dual Core Tegra 2",
-    "fmRadio": false,
-    "physicalKeyboard": false,
-    "usb": "USB 2.0"
-  },
-  "id": "motorola-xoom-with-wi-fi",
-  "images": [
-    "img/phones/motorola-xoom-with-wi-fi.0.jpg",
-    "img/phones/motorola-xoom-with-wi-fi.1.jpg",
-    "img/phones/motorola-xoom-with-wi-fi.2.jpg",
-    "img/phones/motorola-xoom-with-wi-fi.3.jpg",
-    "img/phones/motorola-xoom-with-wi-fi.4.jpg",
-    "img/phones/motorola-xoom-with-wi-fi.5.jpg"
-  ],
-  "name": "Motorola XOOM\u2122 with Wi-Fi",
-  "sizeAndWeight": {
-    "dimensions": [
-      "249.1 mm (w)",
-      "167.8 mm (h)",
-      "12.9 mm (d)"
+    "battery": {
+      "standbyTime": "336 hours",
+      "talkTime": "24 hours",
+      "type": "Other ( mAH)"
+    },
+    "camera": {
+      "features": [
+        "Flash",
+        "Video"
+      ],
+      "primary": "5.0 megapixels"
+    },
+    "connectivity": {
+      "bluetooth": "Bluetooth 2.1",
+      "cell": "",
+      "gps": true,
+      "infrared": false,
+      "wifi": "802.11 b/g/n"
+    },
+    "description": "Motorola XOOM with Wi-Fi has a super-powerful dual-core processor and Android\u2122 3.0 (Honeycomb) \u2014 the Android platform designed specifically for tablets. With its 10.1-inch HD widescreen display, you\u2019ll enjoy HD video in a thin, light, powerful and upgradeable tablet.",
+    "display": {
+      "screenResolution": "WXGA (1200 x 800)",
+      "screenSize": "10.1 inches",
+      "touchScreen": true
+    },
+    "hardware": {
+      "accelerometer": true,
+      "audioJack": "3.5mm",
+      "cpu": "1 GHz Dual Core Tegra 2",
+      "fmRadio": false,
+      "physicalKeyboard": false,
+      "usb": "USB 2.0"
+    },
+    "id": "motorola-xoom-with-wi-fi",
+    "images": [
+      "img/phones/motorola-xoom-with-wi-fi.0.jpg",
+      "img/phones/motorola-xoom-with-wi-fi.1.jpg",
+      "img/phones/motorola-xoom-with-wi-fi.2.jpg",
+      "img/phones/motorola-xoom-with-wi-fi.3.jpg",
+      "img/phones/motorola-xoom-with-wi-fi.4.jpg",
+      "img/phones/motorola-xoom-with-wi-fi.5.jpg"
     ],
-    "weight": "708.0 grams"
-  },
-  "storage": {
-    "flash": "32000MB",
-    "ram": "1000MB"
-  }
-} ];
+    "name": "Motorola XOOM\u2122 with Wi-Fi",
+    "sizeAndWeight": {
+      "dimensions": [
+        "249.1 mm (w)",
+        "167.8 mm (h)",
+        "12.9 mm (d)"
+      ],
+      "weight": "708.0 grams"
+    },
+    "storage": {
+      "flash": "32000MB",
+      "ram": "1000MB"
+    }
+  }];
 
 class PhonePage {
   constructor(options) {
     this._el = options.el;
-
     this._phonesViewer = new PhoneViewer({
       el: this._el.querySelector('[data-component="phonesViewer"]')
     });
-
     this._phoneGallary = new PhoneGallary({
       el: this._el.querySelector('[data-component="phoneGallary"]')
     });
-
     this._search = new Search({
       el: this._el.querySelector('[data-component="search"]')
     });
-
     this._shoppingCart = new ShoppingCart({
       el: this._el.querySelector('[data-component="shoppingCart"]')
     });
-
     this._catalogue = new PhonesCatalogue({
       el: this._el.querySelector('[data-component="phonesCatalogue"]')
     });
@@ -251,7 +245,6 @@ class PhonePage {
 
     this._search.on('valueChanged', (event) => {
       let query = event.detail;
-
       this._loadPhones(query)
     });
 
@@ -260,12 +253,12 @@ class PhonePage {
     });
 
     this._catalogue.on('phonesViewerHidden', event => {
-
-      this._catalogue._hidden(event.detail);
-
+      this._catalogue.hide(event.detail);
       this._phonesViewer.show();
-
+      this._phoneGallary.show();
     });
+
+    this._phoneGallary.off('click', this._phoneGallary._onImageClick.bind(this));
 
     this._loadPhones();
   }
@@ -274,33 +267,28 @@ class PhonePage {
     // 1. Создаём новый объект XMLHttpRequest
     let xhr = new XMLHttpRequest();
     let url = '/data/phones.json';
-
-    if(query) {
+    if (query) {
       url += `?query=${query}`;
     }
-
     // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
     xhr.open('GET', url, true); // всегда true - запрос был асинхронный
-
     xhr.onload = () => {
       let phones = JSON.parse(xhr.responseText);
-
       //hack until server can give filtered results
       query = query.toLowerCase();
-      phones = phones.filter( phone => {
-         return phone.name.toLowerCase().indexOf(query) !== -1
+      phones = phones.filter(phone => {
+        return phone.name.toLowerCase().indexOf(query) !== -1
       });
       //end hack
-
 // 4. Если код ответа сервера не 200, то это ошибка
       if (xhr.status != 200) {
         // обработать ошибку
-        console.log( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
+        console.log(xhr.status + ': ' + xhr.statusText); // пример вывода: 404: Not Found
       } else {
         // вывести результат
         //console.log( phones ); // responseText -- текст ответа.
-      };
-
+      }
+      ;
       this._catalogue.setData(phones);
     };
     // 5. Отсылаем запрос
