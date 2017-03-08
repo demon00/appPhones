@@ -1,50 +1,36 @@
-export default class PhoneViewer {
+import Component from '../component';
+import compiledTemplate from './template.hbs';
+
+export default class PhoneViewer extends Component{
   constructor(options) {
-    this._el = options.el
-    this._phone = phoneFromServ || options.phone;
-    this._render();
+    super(options.el);
     this._el.addEventListener('click', this._onButtonClick.bind(this));
   }
 
-  show() {
-    this._el.classList.remove('catalog__hidden');
-  }
-
-  on(eventName, handler) {
-    this._el.addEventListener(eventName, handler);
-  }
-
-  off(eventName, handler) {
-    this._el.removeEventListener(eventName, handler);
-  }
-
-  _trigger(eventName, data) {
-    let myEvent = new CustomEvent(eventName, {
-      detail: data
-    });
-    this._el.dispatchEvent(myEvent);
+  setData(phone) {
+    this._phone = phone;
+    this._render();
   }
 
   _render() {
-    let template = document.querySelector('#phone-viewer-template').innerHTML;
-    let compiled = _.template(template);
-    this._el.innerHTML = compiled({
+    this._el.innerHTML = compiledTemplate({
       phone: this._phone
     });
   }
 
   _hideItemComponent() {
-    this._el.classList.add('catalog__hidden');
-    document.querySelector('[data-components="phoneGallary"]').classList.add('catalog__hidden');
+    this._el.classList.add('js-hidden');
+    document.querySelector('[data-component="phoneGallary"]').classList.add('js-hidden');
   }
 
   _showCatalog() {
-    this._catalogComponent = document.querySelector('[data-components="phonesCatalogue"]');
-    this._catalogComponent.classList.remove('catalog__hidden');
+    let catalogComponent = document.querySelector('[data-component="phoneCatalogue"]');
+    catalogComponent.classList.remove('js-hidden');
   }
 
   _addToBasket() {
     let selectedPhoneItem = this._el.querySelector('[data-element="phoneViewerItem"]');
+    console.log(selectedPhoneItem.dataset.phoneId);
     this._trigger('phoneSelected', selectedPhoneItem.dataset.phoneId);
   }
 
@@ -59,5 +45,6 @@ export default class PhoneViewer {
     if (clickButtonAdd) {
       this._addToBasket();
     }
+
   }
 }

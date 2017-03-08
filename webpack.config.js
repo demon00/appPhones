@@ -17,23 +17,23 @@ module.exports = {
       //   test: /\.css$/,
       //   loader: "style-loader!css-loader"
       // },
-      // {
-      //   test: /\.html$/,
-      //   loader: 'raw-loader'
-      // },
-      // {
-      //   test: /\.hbs$/,
-      //   loader: 'handlebars-loader'
-      // },
-      // {
-      //   test: /\.js$/,
-      //   exclude: /node_modules/,
-      //   loader: 'babel-loader',
-      //   query: {
-      //     presets: ['env'],
-      //     // plugins: ['transform-runtime']
-      //   }
-      // }
+      {
+        test: /\.html$/,
+        loader: 'raw-loader'
+      },
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader'
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['env'],
+          // plugins: ['transform-runtime']
+        }
+      }
     ],
   },
 

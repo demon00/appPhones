@@ -1,0 +1,9 @@
+<% phone.forEach( (phone) => { %>
+<ul class="phone-thumbs">
+	<% phone.images.forEach( (item, i, arr) => { %>
+	<li>
+		<img src="<%-phone.images[i]%>" data-phone-src="phone-image">
+	</li>
+	<% }); %>
+</ul>
+<% }); %>

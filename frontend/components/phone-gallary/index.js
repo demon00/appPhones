@@ -1,33 +1,20 @@
-export default  class PhoneGallary {
+import Component from '../component';
+import compiledTemplate from './template.hbs';
+
+export default class PhoneGallary extends Component{
   constructor(options) {
-    this._el = options.el;
-    this._phone = phoneFromServ || options.phone;
+    super(options.el);
+
+    this._el.addEventListener('click', this._onImageClick.bind(this));
+  }
+
+  setData(phone) {
+    this._phone = phone.images;
     this._render();
   }
 
-  show() {
-    this._el.classList.remove('catalog__hidden');
-  }
-
-  on(eventName, handler) {
-    this._el.addEventListener(eventName, handler);
-  }
-
-  off(eventName, handler) {
-    this._el.removeEventListener(eventName, handler);
-  }
-
-  // _trigger(eventName, data) {
-  //   let myEvent = new CustomEvent(eventName, {
-  //     detail: data
-  //   });
-  //   this._el.dispatchEvent(myEvent);
-  // }
-
   _render() {
-    let template = document.querySelector('#phone-gallary-template').innerHTML;
-    let compiled = _.template(template);
-    this._el.innerHTML = compiled({
+    this._el.innerHTML = compiledTemplate({
       phone: this._phone
     });
   }
@@ -35,7 +22,7 @@ export default  class PhoneGallary {
   _onImageClick(event) {
     this._clickImage = event.target.closest('[data-phone-src="phone-image"]');
     if(this._clickImage) {
-      let phoneViewerComponent = document.querySelector('[data-components="phonesViewer"]');
+      let phoneViewerComponent = document.querySelector('[data-component="phoneViewer"]');
       let mainImage = phoneViewerComponent.querySelector('[data-element="phone-main-image"]');
       mainImage.src = this._clickImage.src;
     }
