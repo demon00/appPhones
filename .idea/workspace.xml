@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc7cac68-3373-46e8-b36e-d31167302895" name="Default" comment="was add webpack moduls&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/components/component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/components/phone-catalogue/template.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/components/phone-gallary/template.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/components/phone-gallary/template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/components/phone-viewer/template.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/components/phone-viewer/template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/components/shopping-cart/template.hbs" />
+    <list default="true" id="dc7cac68-3373-46e8-b36e-d31167302895" name="Default" comment="was added css-loader">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/components/phone-viewer/style.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/components/phone-gallary/template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/components/phone-viewer/template.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/app.js" afterPath="$PROJECT_DIR$/frontend/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/components/phone-catalogue/index.js" afterPath="$PROJECT_DIR$/frontend/components/phone-catalogue/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/components/phone-gallary/index.js" afterPath="$PROJECT_DIR$/frontend/components/phone-gallary/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/components/phone-page/index.js" afterPath="$PROJECT_DIR$/frontend/components/phone-page/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/components/phone-viewer/index.js" afterPath="$PROJECT_DIR$/frontend/components/phone-viewer/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/components/search/index.js" afterPath="$PROJECT_DIR$/frontend/components/search/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/components/shopping-cart/index.js" afterPath="$PROJECT_DIR$/frontend/components/shopping-cart/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/components/phone-viewer/template.hbs" afterPath="$PROJECT_DIR$/frontend/components/phone-viewer/template.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app.css" afterPath="$PROJECT_DIR$/public/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.js" afterPath="$PROJECT_DIR$/public/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.js.map" afterPath="$PROJECT_DIR$/public/index.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
@@ -60,8 +50,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/components/phone-catalogue/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="35" column="70" lean-forward="false" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+            <state relative-caret-position="21">
+              <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -72,8 +62,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/components/phone-viewer/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-147">
-              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="42">
+              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -81,10 +71,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/components/phone-viewer/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/components/phone-gallary/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
+            <state relative-caret-position="630">
               <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -93,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -147,19 +147,21 @@
         <option value="$PROJECT_DIR$/frontend/app.js" />
         <option value="$PROJECT_DIR$/public/app.css" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/frontend/components/phone-catalogue/template.hbs" />
         <option value="$PROJECT_DIR$/frontend/components/search/index.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/../../appPhones/public/js/phone-page.js" />
         <option value="$PROJECT_DIR$/frontend/components/component.js" />
         <option value="$PROJECT_DIR$/../../appPhones/public/js/phone-catalogue.js" />
-        <option value="$PROJECT_DIR$/frontend/components/phone-viewer/template.hbs" />
-        <option value="$PROJECT_DIR$/frontend/components/phone-catalogue/index.js" />
         <option value="$PROJECT_DIR$/frontend/components/phone-gallary/template.hbs" />
-        <option value="$PROJECT_DIR$/frontend/components/phone-viewer/index.js" />
         <option value="$PROJECT_DIR$/frontend/components/phone-page/index.js" />
         <option value="$PROJECT_DIR$/frontend/components/phone-gallary/index.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/frontend/components/phone-viewer/template.hbs" />
+        <option value="$PROJECT_DIR$/frontend/components/phone-catalogue/style.css" />
+        <option value="$PROJECT_DIR$/frontend/components/phone-catalogue/index.js" />
+        <option value="$PROJECT_DIR$/frontend/components/phone-viewer/index.js" />
+        <option value="$PROJECT_DIR$/frontend/components/phone-viewer/style.css" />
       </list>
     </option>
   </component>
@@ -280,73 +282,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="phone-viewer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phone-page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phone-catalogue" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -367,11 +303,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ashoul\Desktop\webJS\appPhone\frontend\components\phone-viewer" />
+      <recent name="C:\Users\Ashoul\Desktop\webJS\appPhone\frontend\components\phone-catalogue" />
       <recent name="C:\Users\Ashoul\Desktop\webJS\appPhone\frontend\component\shopping-cart" />
       <recent name="C:\Users\Ashoul\Desktop\webJS\appPhone\frontend\component\search" />
       <recent name="C:\Users\Ashoul\Desktop\webJS\appPhone\frontend\component\phone-viewer" />
-      <recent name="C:\Users\Ashoul\Desktop\webJS\appPhone\frontend\component\phone-page" />
-      <recent name="C:\Users\Ashoul\Desktop\webJS\appPhone\frontend\component\phone-gallary" />
     </key>
   </component>
   <component name="RunManager">
@@ -449,7 +385,7 @@
       <workItem from="1488781161689" duration="8917000" />
       <workItem from="1488874556476" duration="8966000" />
       <workItem from="1488886331112" duration="6564000" />
-      <workItem from="1488960498928" duration="21604000" />
+      <workItem from="1488960498928" duration="23428000" />
     </task>
     <task id="LOCAL-00001" summary="was modificated files&#10;">
       <created>1488884932248</created>
@@ -458,25 +394,32 @@
       <option name="project" value="LOCAL" />
       <updated>1488884932248</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="was add webpack moduls&#10;">
+      <created>1488991314669</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1488991314669</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49550000" />
+    <option name="totallyTimeSpent" value="51374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1748512" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1748512" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56792146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -515,7 +458,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="was modificated files&#10;" />
     <MESSAGE value="was add webpack moduls&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="was add webpack moduls&#10;" />
+    <MESSAGE value="was added css-loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="was added css-loader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -704,14 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/components/phone-gallary/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -768,14 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../appPhones/public/js/phone-catalogue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -792,29 +720,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/components/phone-viewer/template.hbs">
+    <entry file="file://$PROJECT_DIR$/frontend/components/phone-gallary/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/components/phone-catalogue/template.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/components/phone-catalogue/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="35" column="70" lean-forward="false" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+        <state relative-caret-position="630">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -833,23 +753,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/components/phone-viewer/index.js">
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/components/phone-viewer/template.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="72" lean-forward="true" selection-start-line="0" selection-start-column="72" selection-end-line="0" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/components/phone-catalogue/template.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/components/phone-catalogue/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/components/phone-gallary/index.js">
+    <entry file="file://$PROJECT_DIR$/frontend/components/phone-viewer/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="42">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/components/phone-viewer/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

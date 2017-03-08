@@ -1,0 +1,9 @@
+.button {
+	background-color: aqua;
+	color: white;
+}
+
+.button__add {
+	background-color: darkred;
+}
+

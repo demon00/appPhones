@@ -1,5 +1,6 @@
 import Component from '../component';
 import compiledTemplate from './template.hbs';
+import './style.css';
 
 export default class PhoneViewer extends Component{
   constructor(options) {
