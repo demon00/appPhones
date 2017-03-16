@@ -1,12 +1,12 @@
 /* app css stylesheet */
 
 body {
-	padding-top: 20px;
+	background-color: #f7fbf3;
+	font-family: 'Roboto', sans-serif;
 }
 
-
 .phone-images {
-	background-color: white;
+	background-color: #f6f6f6;
 	width: 450px;
 	height: 450px;
 	overflow: hidden;
@@ -32,6 +32,17 @@ body {
 	padding-top: 15px;
 }
 
+.sidebar {
+	position: fixed;
+	border-right: 1px solid #ddd;
+	height: 100%;
+}
+
+.main-content {
+	margin-top: 20px;
+	float: right;
+}
+
 /** Detail View **/
 img.phone {
 	float: left;
@@ -42,6 +53,7 @@ img.phone {
 	height: 400px;
 	width: 400px;
 	display: none;
+	border: 1px solid #ddd;
 }
 
 img.phone:first-child {
@@ -55,7 +67,7 @@ ul.phone-thumbs {
 }
 
 ul.phone-thumbs li {
-	border: 1px solid black;
+	border: 1px solid #ddd;
 	display: inline-block;
 	margin: 1em;
 	background-color: white;
@@ -71,31 +83,35 @@ ul.phone-thumbs img:hover {
 	cursor: pointer;
 }
 
-
-ul.specs {
-	clear: both;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-ul.specs > li{
-	display: inline-block;
-	width: 200px;
-	vertical-align: top;
-}
-
-ul.specs > li > span{
-	font-weight: bold;
-	font-size: 1.2em;
-}
-
-ul.specs dt {
-	font-weight: bold;
-}
-
 h1 {
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #ddd;
+}
+
+.phone-name {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #a3be8c;
+	transition: all .3s ease;
+}
+
+.phone-name:hover {
+	color: #749558;
+}
+
+.phone-decrip {
+	font-size: 1em;
+	color: #262625;
+	font-style: italic;
+}
+
+.search-block {
+	margin-top: 30px;
+	font-weight: bold;
+	color: #262625;
+}
+
+.input-field {
+	font-weight: normal;
 }
 
 .js-hidden {

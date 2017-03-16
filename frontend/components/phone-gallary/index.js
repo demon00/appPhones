@@ -21,9 +21,13 @@ export default class PhoneGallary extends Component{
 
   _onImageClick(event) {
     this._clickImage = event.target.closest('[data-phone-src="phone-image"]');
+
     if(this._clickImage) {
+
       let phoneViewerComponent = document.querySelector('[data-component="phoneViewer"]');
+
       let mainImage = phoneViewerComponent.querySelector('[data-element="phone-main-image"]');
+
       mainImage.src = this._clickImage.src;
     }
   }

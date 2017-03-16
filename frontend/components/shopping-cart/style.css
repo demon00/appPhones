@@ -1,0 +1,20 @@
+.caption__shop {
+	margin-top: 50px;
+	font-weight: bold;
+}
+
+.selected-phones {
+
+}
+
+.selected-phone {
+	list-style: none;
+	font-size: 1em !important;
+	margin-left: -40px;
+	color: #05c777;
+	font-weight: bold;
+}
+
+.empty_backet {
+	color: #ccc;
+}

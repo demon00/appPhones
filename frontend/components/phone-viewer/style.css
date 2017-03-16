@@ -1,9 +1,44 @@
 .button {
 	background-color: aqua;
 	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	transition: all .3s ease;
 }
 
 .button__add {
-	background-color: darkred;
+	background-color: #589f1b;
+}
+
+.button__add:hover {
+	background-color: #487606;
+}
+
+.button__add:active {
+	background-color: #3d6504;
+}
+
+.button__back {
+	background-color: #1e428c;
+}
+
+.button__back:hover {
+	background-color: #163370;
+}
+
+.button__back:active {
+	background-color: #102c64;
+}
+
+.name-viewer-phone {
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.descrip-viewer-phone {
+	font-size: 1em;
+	font-style: italic;
 }
 

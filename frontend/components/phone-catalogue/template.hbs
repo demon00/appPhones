@@ -6,9 +6,9 @@
 				<img alt="{{{ phone.name }}}" src="{{ phone.imageUrl }}">
 			</a>
 
-			<a href="#!/phones/{{ phone.id }}" data-element="phoneItemLink">{{{ phone.name }}}</a>
+			<a href="#!/phones/{{ phone.id }}" data-element="phoneItemLink" class="phone-name">{{{ phone.name }}}</a>
 
-			<p>{{{ phone.snippet }}}</p>
+			<p class="phone-decrip">{{{ phone.snippet }}}</p>
 		</li>
 
 	{{/each}}

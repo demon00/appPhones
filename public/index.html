@@ -9,14 +9,15 @@
 
 	<script src="index.js" defer></script>
 </head>
+
 <body>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-2">
+		<div class="col-md-2 sidebar">
 			<!--Sidebar content-->
-			<p data-component="search">
+			<p data-component="search" class="search-block">
 				Search:
-				<input data-element="field">
+				<input data-element="field" class="input-field" placeholder=" enter phone">
 			</p>
 			<p>
 				Sort by:
@@ -27,15 +28,15 @@
 			</p>
 			<div data-component="shoppingCart"></div>
 		</div>
-		<div class="col-md-10">
+		<div class="col-md-10 main-content">
 			<!--Body content-->
 			<div data-component="phoneCatalogue"><!-- initial catalog there--></div>
 			<div data-component="phoneViewer" class="js-hidden"><!-- innitial viewer there--></div>
 			<div data-component="phoneGallary" class="js-hidden"></div>
+			<div data-component="phoneDetail" class="js-hidden"></div>
 		</div>
 	</div>
 </div>
 
-</script>
 </body>
 </html>

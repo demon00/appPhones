@@ -1,0 +1,43 @@
+.specs {
+	padding-top: 30px;
+	clear: both;
+}
+
+.specs li{
+	list-style: none;
+}
+
+.item-info {
+	width: 100%;
+	padding-left: 0;
+}
+
+.main-info {
+	margin-left: -40px;
+}
+
+.item-h3 {
+	font-weight: 700;
+	font-size: 1.5em;
+	border-bottom: 1px solid #ddd;
+	background: #f3f3f3;
+	width: 100%;
+	line-height: 1.5em;
+	text-align: left;
+	margin-bottom: 0 !important;
+	padding-left: 20px;
+}
+
+.info-h5{
+	color: #110F0F;
+	font-weight: bold;
+	font-size: 1em;
+	padding-left: 20px;
+}
+
+.main-info li {
+	padding: 5px 0 5px 20px;
+	vertical-align: top;
+	line-height: 19px;
+}
+

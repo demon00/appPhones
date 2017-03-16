@@ -4,6 +4,7 @@ import Search from '../search';
 import ShoppingCart from '../shopping-cart';
 import HttpService from '../../services/http-service';
 import PhoneGallary from '../phone-gallary';
+import PhoneDetail from '../phone-detail';
 
 export default class PhonePage {
   constructor(options) {
@@ -14,6 +15,13 @@ export default class PhonePage {
     this.initViewer();
     this.initShoppingCart();
     this.initGallary();
+    this.initDetail();
+  }
+
+  initDetail() {
+    this._detail = new PhoneDetail({
+      el: this._el.querySelector('[data-component="phoneDetail"]')
+    });
   }
 
   initGallary() {
@@ -74,6 +82,8 @@ export default class PhonePage {
   }
 
   _onPhoneDetailsLoaded(phoneData) {
+    this._detail.setData(phoneData);
+    this._detail.show();
     this._viewer.setData(phoneData);
     this._viewer.show();
     this._phoneGallary.setData(phoneData);

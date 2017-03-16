@@ -1,13 +1,13 @@
-<h3>Shopping cart</h3>
+<h3 class="caption__shop">Shopping cart</h3>
 
 {{#if orderItems.length }}
 
 	<ul class="selected-phones">
 		{{#each orderItems as |item| }}
-			<li>{{{ item }}}</li>
+			<li class="selected-phone">{{{ item }}}</li>
 		{{/each}}
 	</ul>
 
 {{else}}
-	<p>No items yet!</p>
+	<p class="empty_backet">No items yet!</p>
 {{/if}}
